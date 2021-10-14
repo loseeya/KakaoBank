@@ -1,0 +1,577 @@
+* {
+box-sizing: border-box;
+  margin: 0%;
+  /* padding: 0%; */
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+#kakao-wrap {
+  width: 100%;
+  margin: 0 auto;
+}
+
+ul,
+li,
+ol {
+  margin: 0%;
+  padding: 0%;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 헤더 or 메뉴 부분 */
+
+.header {
+  width: 100%;
+  background-color: #fff;
+}
+
+.gnb-wrap {
+  position: fixed;
+  width: 100%;
+  height: 81px;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+  z-index: 99;
+}
+
+.gnb {
+  display: flex;
+  justify-content: space-between;
+  width: 1080px;
+  height: 80px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.gnb .logo {
+  line-height: 0%;
+  margin: 30px 0;
+}
+
+.gnb li {
+  display: inline-block;
+}
+
+.gnb li:last-child a {
+  display: inline-block;
+  width: 126px;
+  padding: 0 20px;
+  line-height: 44px;
+  background-color: #fede22;
+  border-radius: 22px;
+}
+
+.gnb li a {
+  font-size: 15px;
+  margin: 0 10px;
+  padding: 0 10px;
+  line-height: 80px;
+  color: black;
+}
+
+/* 컨텐츠 부분 */
+
+#content {
+  position: relative;
+  margin: 0 auto;
+}
+
+.main-banner {
+  /* position: relative; */
+  width: 100%;
+  height: 720px;
+  background-color: #ffef6b;
+}
+
+.bg-ryan {
+  position: absolute;
+  background-image: url(./asset/img/main/main-bg3.png);
+  background-size: contain;
+  width: 1200px;
+  height: 883px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin:0 auto;
+}
+
+.main-desc {
+  max-width: 1200px;
+}
+
+.main-desc h2 {
+  position: absolute;
+  top: 170px;
+  left: 90px;
+  font-size: 49px;
+}
+
+.main-desc p {
+  position: absolute;
+  top: 333px;
+  left: 90px;
+  font-size: 16px;
+}
+
+.main-desc span {
+  position: absolute;
+  top: 410px;
+  left: 90px;
+}
+
+.main-desc span a {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+
+/* 계좌이체 부분 */
+
+.transfers {
+  position: relative;
+  width: 1200px;
+  height: 750px;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+.transfer-img {
+  position: absolute;
+  top: 36px;
+  left: 30px;
+}
+
+.transfer-img img {
+  width: 473px;
+  height: 678px;
+}
+
+.transfer-desc {
+  position: absolute;
+  top: 200px;
+  right: 200px;
+}
+
+.transfer-desc h3 {
+  font-size: 40px;
+  margin-bottom: 24px;
+}
+
+.transfer-desc p {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.transfer-desc .link {
+  display: inline-block;
+  width: 258px;
+  height: 56px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #c1c1c1;
+  border-radius: 5px;
+}
+
+.transfer-desc a {
+  display: inline-block;
+  padding: 12px;
+  color: rgb(56, 56, 56);
+}
+
+/* 예금적금 */
+
+.savings {
+  position: relative;
+  width: 1200px;
+  height: 750px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.saving-img {
+  position: absolute;
+  top: 50px;
+  right: 30px;
+}
+
+.saving-img img {
+  display: inline-block;
+  width: 409px;
+  height: 722px;
+}
+
+.saving-desc {
+  position: absolute;
+  top: 200px;
+  left: 50px;
+}
+
+.saving-desc h3 {
+  font-size: 40px;
+  margin-bottom: 24px;
+}
+
+.saving-desc p {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.saving-link-wrap {
+  display: inline-block;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.saving-link {
+  float: left;
+  width: 158px;
+  height: 56px;
+  margin-right: 15px;
+}
+
+.saving-link2 {
+  float: right;
+}
+
+.saving-desc img {
+  width: 440px;
+  height: 104px;
+}
+
+/* 모임통장 부분 */
+
+.together {
+  position: relative;
+  width: 1200px;
+  height: 750px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.together-img img {
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  width: 459px;
+  height: 607px;
+}
+
+.together-desc {
+  position: absolute;
+  top: 200px;
+  right: 150px;
+}
+
+.together-desc h3 {
+  font-size: 40px;
+  margin-bottom: 24px;
+}
+
+.together-desc p {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* 26주 적금 */
+
+.week26 {
+  position: relative;
+  width: 1200px;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.week26-img img {
+  position: absolute;
+  right: 30px;
+  width: 492px;
+  height: 408px;
+}
+
+.week26-desc {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+}
+
+.week26-desc h3 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.week26-desc p {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.week26-link a {
+  text-align: center;
+  color: black;
+}
+
+/* 해외송금 */
+
+.remittance-bg {
+  background: url(./asset/img/main/home_map.png) no-repeat left;
+  height: 750px;
+}
+
+.remittance {
+  position: relative;
+  width: 1200px;
+  height: 750px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.remittance img {
+  position: absolute;
+  width: 407px;
+  height: 715px;
+}
+
+.remittance-desc {
+  position: absolute;
+  top: 150px;
+  right: 150px;
+}
+
+.remittance-desc h3 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.remittance-desc p {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.remittance-link a {
+  font-size: 16PX;
+  color: #000;
+}
+
+/* 내가원하는 시간에 */
+
+.sky-bg {
+  background-image: url(./asset/img/main/—Pngtree—blue\ sky\ hand-painted\ grass\ background_1133433.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 1000px;
+}
+
+.sky {
+  position: relative;
+  width: 1200px;
+  height: 750px;
+  margin-top: 100px;
+  margin: 0 auto;
+}
+
+.sky-img img {
+  position: absolute;
+  bottom: -97px;
+  left: 50%;
+  width: 430px;
+  height: 570px;
+  transform: translateX(-50%);
+}
+
+.sky-desc {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.sky-desc h3 {
+  width: 1200px;
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.sky-desc p {
+  color: #666;
+}
+
+.sky .link {
+  margin-top: 10px;
+}
+
+.sky-desc .link a {
+  color: whitesmoke;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+/* 체크카드 */
+
+.card {
+  position: relative;
+  width: 1200px;
+  height: 1065px;
+  margin: 0 auto;
+}
+
+.card-desc {
+  position: absolute;
+  left: 50%;
+  width: 1200px;
+  text-align: center;
+  transform: translateX(-50%);
+}
+
+.card-desc h3 {
+  font-size: 40px;
+  margin-bottom: 24px;
+}
+
+.card-desc p {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.card-link {
+
+}
+
+.card-link a {
+  color: #000;
+}
+
+/* 카카오뱅크를 만들어갑니다 */
+
+.make-kabang {
+  position: relative;
+  width: 1200px;
+  height: 1175px;
+  margin: 0 auto;
+}
+
+.make-kabang-desc {
+  padding-top: 150px;
+  text-align: center;
+}
+
+.make-kabang-desc h3 {
+  font-size: 40px;
+}
+
+.make-kabang .line {
+  /* position: absolute; */
+  width: 100px;
+  height: 2px;
+  background-color: #000;
+  margin: 50px auto 140px;
+}
+
+.make-kabang-img img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1020px;
+  height: 270px;
+}
+
+.make-kabang .img-desc {
+  text-align: center;
+}
+
+.img-desc ul {
+  position: absolute;
+  bottom: 300px;
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.img-desc ul li {
+  /* margin: 100px; */
+}
+
+.img-desc ul li:first-child {
+  margin-left: 120px;
+}
+
+.img-desc ul li:nth-child(2) {
+  margin-left: 55px;
+}
+
+.img-desc ul li:last-child {
+  margin-left: 300px;
+}
+
+.img-desc ul li strong {
+  font-size: 18px;
+  display: inline-block;
+  margin: 45px 0px 17px;
+}
+
+/* 푸터 */
+
+.footer-bg {
+  /* display: inline-block; */
+  /* width: 1920px; */
+  height: 160px;
+  background-color: #eee;
+  margin: 0 auto;
+}
+
+footer {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: -140px;
+}
+
+.footer-list ul {
+  display: flex;
+  width: 1200px;
+  justify-content: space-between;
+}
+
+.footer-list ul li {
+  justify-content: space-between;
+}
+
+.footer-list ul li::after {
+  position: relative;
+  top: -15px;
+  left: -13px;
+  display: block;
+  content: '';
+  width: 1px;
+  height: 10px;
+  background-color: #666;
+  /* border: 1px solid #000; */
+}
+
+.footer-list ul li:first-child::after {
+  display: none;
+}
+
+.footer-list a {
+  color: #666;
+}
+
+.footer-list strong {
+  color: #000;
+}
