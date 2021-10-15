@@ -372,7 +372,7 @@ a {
 .sky-bg {
   background-image: url(./asset/img/main/—Pngtree—blue\ sky\ hand-painted\ grass\ background_1133433.jpg);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   height: 1000px;
 }
